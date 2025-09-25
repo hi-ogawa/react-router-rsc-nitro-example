@@ -5,7 +5,7 @@
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
-    "start": "react-router-serve build/server/index.js",
+    "start": "node .output/server/index.mjs",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "react-router": "7.9.2"
   },
   "devDependencies": {
+    "@hiogawa/vite-plugin-nitro": "^0.0.2",
     "@react-router/dev": "7.9.2",
     "@react-router/fs-routes": "7.9.2",
     "@tailwindcss/vite": "4.1.13",

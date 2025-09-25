@@ -4,6 +4,7 @@ import rsc from "@vitejs/plugin-rsc";
 import { defineConfig } from "vite";
 import devtoolsJson from "vite-plugin-devtools-json";
 import tsconfigPaths from "vite-tsconfig-paths";
+import nitro from "@hiogawa/vite-plugin-nitro"
 
 export default defineConfig({
   plugins: [
@@ -12,5 +13,10 @@ export default defineConfig({
     reactRouterRSC(),
     rsc(),
     devtoolsJson(),
+    nitro({
+      server: {
+        environmentName: "rsc",
+      },
+    })
   ],
 });
