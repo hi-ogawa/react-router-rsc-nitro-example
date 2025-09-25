@@ -18,6 +18,7 @@
   "devDependencies": {
     "@hiogawa/vite-plugin-nitro": "^0.0.2",
     "@react-router/dev": "7.9.2",
+    "@react-router/fs-routes": "7.9.2",
     "@tailwindcss/vite": "4.1.13",
     "@types/node": "24.5.2",
     "@types/react": "19.1.13",
