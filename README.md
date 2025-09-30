@@ -13,7 +13,8 @@ Nitro automatically detects [`preset`](https://nitro.build/config#preset) based 
 ```js
 export default defineConfig({
   plugins: [
-    ...nitro({
+    ...,
+    nitro({
       server: {
         environmentName: "rsc",
       },
